@@ -21,6 +21,8 @@
     font-size: 25px;
     color: black;
     display: block;
+    border-radius: 25px;
+
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -29,14 +31,11 @@
     color: lightgray;
   }
   
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+
 
   .sidenav2 {
     height: auto; /* Full-height: remove this if you want "auto" height */
+    margin: 10px 10p;
     width: 160px; /* Set the width of the sidebar */
     position: absolute; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
@@ -57,6 +56,8 @@
     font-size: 25px;
     color: black;
     display: block;
+    border-radius: 25px;
+
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -70,12 +71,15 @@
     max-width:100%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 25px;
   }
   .link {
     color:blue;
     background-color: lightgrey;
-    text-decoration: underline;
   }
+  .link:hover {
+    color:rgb(2, 137, 248);
+    }
   embed {
     display: block;
     margin-left: auto;
@@ -87,3 +91,35 @@
     padding: 0 4px;
   }
   
+  div.gallery {
+    margin: 90px;
+
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    box-shadow:3px 3px 3px black;
+    border-radius: 25px;
+
+
+  }
+ /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+ @media screen and (max-width: 550px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav {width: 70px;}
+  .sidenav {top:20%}
+  .sidenav a {font-size: 10px;}
+  .sidenav a {text-align: center;}
+  .sidenav2 {padding-top: 15px;}
+  .sidenav2 {width: 70px;}
+  .sidenav2 {top:20%}
+  .sidenav2 a {font-size: 10px;}
+  .sidenav2 a {text-align: center;}
+}
